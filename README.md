@@ -98,46 +98,7 @@ Long Break Interval: After how many focus sessions to take a long break
 
 Tap "✓ SAVE" to apply changes or "✕ CANCEL" to discard
 
-🎨 Theme Modes
-Dark Mode (Default)
 
-Focus: Deep blue background (#0a0e27) with cyan accents
-Breaks: Purple-tinted background (#1a0f2e)
-Primary color: Turquoise (#40E0D0)
-Secondary color: Red (#FF4757)
-
-Light Mode
-
-Focus: Light blue-gray background (#f0f4f8)
-Breaks: Soft pink background (#fdf4f5)
-Primary color: Teal (#00897b)
-Secondary color: Pink (#e91e63)
-
-📂 Project Structure
-pomodoro-timer/
-├── App.tsx              # Main timer component with all features
-├── package.json         # Dependencies
-├── tsconfig.json        # TypeScript configuration
-├── app.json            # Expo configuration
-└── README.md           # Documentation
-🔧 Customization
-Default Timer Values
-Modify these in the settings state:
-typescriptconst [settings, setSettings] = useState<Settings>({
-  focusTime: 25,           // Focus session duration (minutes)
-  shortBreakTime: 5,       // Short break duration (minutes)
-  longBreakTime: 15,       // Long break duration (minutes)
-  autoTransition: true,    // Auto-start next session
-  darkMode: true,          // Theme preference
-  longBreakInterval: 4,    // Pomodoros before long break
-});
-Color Customization
-Edit the getThemeColors() function to change color schemes for light/dark modes.
-Animation Speed
-Adjust animation durations in the useEffect hooks:
-
-Pulse animation: Change duration values (default: 1000ms)
-Background rotation: Change duration (default: 20000ms)
 
 🎯 Pomodoro Technique
 The traditional Pomodoro Technique workflow:
